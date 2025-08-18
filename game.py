@@ -11,13 +11,13 @@ def guess_the_number():
         print(f"\nУ вас осталось {attempts} попыток.")
         
         try:
-            guess = int(input("Введите ваше предположение: "))
+            guess = int(input("Введите ваше предположение (1-100): "))
         except ValueError:
             print("Пожалуйста, введите целое число!")
             continue
             
         if guess < 1 or guess > 100:
-            print("Число должно быть в диапазоне от 1 до 100!")
+            print("Число должно быть от 1 до 100!")
             continue
             
         if guess == secret_number:
