@@ -1,3 +1,5 @@
+import random
+
 def guess_the_number():
     print("Добро пожаловать в игру 'Угадай число'!")
     print("Я загадал число от 1 до 100. Попробуй угадать его за 10 попыток!")
@@ -32,4 +34,4 @@ def guess_the_number():
     print(f"\nК сожалению, вы не угадали. Загаданное число было {secret_number}.")
 
 if __name__ == "__main__":
-    guess_the_number(
+    guess_the_number()
